@@ -1,5 +1,7 @@
 package com.ua.project.task1;
 
+import com.ua.project.util.helpers.DisplayInfoHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,20 +15,13 @@ public class Main {
         displayRandomNumbers(randomNumbers1, "=");
     }
 
-    private static void displayIntegersList(final List<Integer> list, final String message, final String separator) {
-        System.out.print(message);
-        list.forEach((item) -> System.out.print(item + " "));
-        System.out.println("\n Count: " + list.size());
-        System.out.println(separator.repeat(20));
-    }
-
     private static void  displayRandomNumbers(final RandomNumbers randomNumbers, final String separator) {
         System.out.println(randomNumbers);
         System.out.println(separator.repeat(50));
 
-        displayIntegersList(randomNumbers.getPositiveNumbers(), " Positive Numbers: ", separator);
-        displayIntegersList(randomNumbers.getNegativeNumbers(), " Negative Numbers: ", separator);
-        displayIntegersList(randomNumbers.getDoubleFigures(), " Double Figures Numbers: ", separator);
-        displayIntegersList(randomNumbers.getMirrorNumbers(), " Mirror Numbers: ", separator);
+        DisplayInfoHelper.displayList(randomNumbers.getPositiveNumbers(), " Positive Numbers: ", separator);
+        DisplayInfoHelper.displayList(randomNumbers.getNegativeNumbers(), " Negative Numbers: ", separator);
+        DisplayInfoHelper.displayList(randomNumbers.getDoubleFigures(), " Double Figures Numbers: ", separator);
+        DisplayInfoHelper.displayList(randomNumbers.getMirrorNumbers(), " Mirror Numbers: ", separator);
     }
 }
