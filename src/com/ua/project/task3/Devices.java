@@ -1,6 +1,7 @@
 package com.ua.project.task3;
 
 import com.ua.project.task3.models.Device;
+import com.ua.project.util.helpers.ToStringBuilderHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,9 +46,6 @@ public class Devices {
 
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder(" DEVICES:\n");
-        devices.forEach(builder::append);
-
-        return builder.toString();
+        return ToStringBuilderHelper.buildToString(" DEVICES:\n", devices);
     }
 }

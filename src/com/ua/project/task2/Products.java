@@ -1,6 +1,7 @@
 package com.ua.project.task2;
 
 import com.ua.project.task2.models.Product;
+import com.ua.project.util.helpers.ToStringBuilderHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,9 +42,6 @@ public class Products {
 
     @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder(" PRODUCTS:\n\n");
-        products.forEach(builder::append);
-
-        return builder.toString();
+        return ToStringBuilderHelper.buildToString(" PRODUCTS:\n\n", products);
     }
 }

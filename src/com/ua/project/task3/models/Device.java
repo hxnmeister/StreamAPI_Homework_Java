@@ -21,7 +21,7 @@ public class Device {
         this(1997, price, type, color, name);
     }
     public Device() {
-        this(1997, 1.0, Type.PHONE, Color.BLACK, "DeviceNAME");
+        this(1997, Type.PHONE, Color.BLACK, "DeviceNAME");
     }
 
     public int getManufactureYear() {
