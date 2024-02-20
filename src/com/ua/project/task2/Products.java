@@ -1,5 +1,7 @@
 package com.ua.project.task2;
 
+import com.ua.project.task2.model.Product;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,6 @@
-package com.ua.project.task2;
+package com.ua.project.task2.model;
+
+import com.ua.project.task2.enums.Category;
 
 public class Product {
     private String name;

@@ -1,4 +1,4 @@
-package com.ua.project.task2;
+package com.ua.project.task2.enums;
 
 public enum Category {
     MILK,
