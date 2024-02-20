@@ -16,7 +16,7 @@ public class Main {
     private static void displayIntegersList(final List<Integer> list, final String message, final String separator) {
         System.out.print(message);
         list.forEach((item) -> System.out.print(item + " "));
-        System.out.println();
+        System.out.println("\n Count: " + list.size());
         System.out.println(separator.repeat(20));
     }
 
