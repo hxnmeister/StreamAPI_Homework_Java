@@ -1,4 +1,4 @@
-package com.ua.project.task2.model;
+package com.ua.project.task2.models;
 
 import com.ua.project.task2.enums.Category;
 

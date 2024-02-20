@@ -1,7 +1,7 @@
 package com.ua.project.task2;
 
 import com.ua.project.task2.enums.Category;
-import com.ua.project.task2.model.Product;
+import com.ua.project.task2.models.Product;
 import com.ua.project.util.helpers.DisplayInfoHelper;
 
 import java.util.ArrayList;
